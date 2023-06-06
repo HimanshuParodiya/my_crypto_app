@@ -1,0 +1,98 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+   
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+
+
+.dark_bg{
+     background-color: #111111;
+    box-shadow: 0px 14px 23px -6px rgba(0,0,0,0.75);
+}
+
+.logo{
+    flex: 0.5;
+    padding-left: 20px;
+}
+.logo img{
+    width: 50px;
+    height: 100px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.navbar .menu{
+
+    flex:0.27;
+}
+
+.navbar .menu ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar .menu ul li{
+    list-style: none;
+    position: relative;
+}
+
+.navbar .menu ul li::after{
+   content: "";
+   position: absolute;
+   left: 50%;
+   right: 50%;
+   bottom: -5px;
+   background-color: #adadad;
+   height: 3px;
+   width: 0;
+   transition: .255s ease-in;
+}
+
+.navbar .menu ul li:hover::after{
+ width: 100%;
+ left: 0;
+ right: 0;
+ 
+}
+
+.navbar .menu ul li a{
+    text-decoration: none;
+    color: #adadad;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+
+.navbar .button{
+    flex:0.1 ;
+    
+}
+.button button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    background-image: linear-gradient(
+  135deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(223deg 100% 27%) 16%,
+  hsl(216deg 100% 33%) 30%,
+  hsl(210deg 100% 38%) 43%,
+  hsl(204deg 100% 41%) 53%,
+  hsl(197deg 100% 42%) 63%,
+  hsl(189deg 100% 41%) 72%,
+  hsl(179deg 100% 40%) 81%,
+  hsl(170deg 100% 45%) 90%,
+  hsl(162deg 100% 50%) 100%
+);
+color: #fff;
+}

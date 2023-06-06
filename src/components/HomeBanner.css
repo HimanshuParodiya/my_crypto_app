@@ -1,0 +1,35 @@
+.container{
+    background-image: url("../assets/HomeBanner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    object-fit: contain;
+    background-origin: content-box;
+    padding-top: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.banner_contents_container{
+    height: 50vh;
+    width: 45%;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 70px;
+    
+}
+
+
+.banner_heading{
+    color: #adadad;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: 42px;
+}
+.banner_description{
+    color: #adadad;
+    letter-spacing: 1px;
+    font-size: 22px;
+}
